@@ -27,4 +27,11 @@ public class Doctor {
     @Embedded
     private Endereco endereco;
 
+    public Doctor(MedicalRegistrationData data) {
+        this.nome = data.nome();
+        this.email = data.email();
+        this.crm = data.crm();
+        this.specialty = data.specialty();
+        this.endereco = new Endereco(data.endereco());
+    }
 }
