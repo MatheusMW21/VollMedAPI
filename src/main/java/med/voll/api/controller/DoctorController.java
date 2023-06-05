@@ -15,6 +15,4 @@ public class DoctorController {
         System.out.println(data);
     }
 
-
-
 }
