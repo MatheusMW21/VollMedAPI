@@ -25,12 +25,30 @@ public class Pacient {
     @Embedded
     private Endereco endereco;
 
+    private Boolean ativo;
+
     public Pacient(PatientRegistrationData data){
+        this.ativo = true;
         this.nome = data.nome();
         this.email = data.email();
         this.cpf = data.cpf();
         this.telefone = data.telefone();
         this.endereco = new Endereco(data.endereco());
+    }
+
+    public void updateInfo(PacientUpdateData data) {
+        if (data.nome() != null)
+            this.nome = data.nome();
+
+        if (data.telefone() != null)
+            this.telefone = data.telefone();
+
+        if (data.endereco() != null)
+            endereco.uptadeInfo(data.endereco());
+    }
+
+    public void inativar() {
+        this.ativo = false;
     }
 
 }
