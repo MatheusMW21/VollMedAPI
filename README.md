@@ -17,7 +17,7 @@ Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o
 O layout da aplicação mobile está disponível neste link: [Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med)
 
 
-## Tecnologias
+## 🛠 Tecnologias
 
 - Spring Boot 3;
 - Java 17;
