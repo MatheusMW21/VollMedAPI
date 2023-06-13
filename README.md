@@ -29,5 +29,5 @@ O layout da aplicação mobile está disponível neste link: [Figma](https://www
 - Insomnia.
 
 ---
-📝 Licença
+## 📝 Licença
 Projeto desenvolvido por Alura e utilizado nos cursos de Spring Boot.
