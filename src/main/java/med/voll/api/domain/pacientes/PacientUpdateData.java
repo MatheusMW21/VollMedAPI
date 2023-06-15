@@ -1,7 +1,7 @@
-package med.voll.api.pacientes;
+package med.voll.api.domain.pacientes;
 
 import jakarta.validation.Valid;
-import med.voll.api.endereco.AdressData;
+import med.voll.api.domain.endereco.AdressData;
 
 public record PacientUpdateData(
         Long id,
