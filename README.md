@@ -5,18 +5,6 @@ Será um aplicativo com algumas opções, em que a pessoa que for usar pode faze
 
 Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o nosso será responsável pelo desenvolvimento da API Rest desse projeto.
 
-## ⚙️ Objetivos
-
-- Desenvolvimento de uma API Rest;
-- CRUD;
-- Validações;
-- Paginação e Ordenação.
-
-
-## 🎨 Layout
-O layout da aplicação mobile está disponível neste link: [Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med)
-
-
 ## 🛠 Tecnologias
 
 - Spring Boot 3;
@@ -27,6 +15,26 @@ O layout da aplicação mobile está disponível neste link: [Figma](https://www
 - JPA/Hibernate;
 - Maven;
 - Insomnia.
+
+## ⚙️ Objetivos
+
+- Desenvolvimento de uma API Rest;
+- CRUD;
+- Validações;
+- Paginação e Ordenação;
+- Boa práticas REST;
+- Tratamento de Erros;
+- Controle de acesso com JWT;
+- Documentação da API;
+- Teste automatizados;
+- Build do projeto.
+
+
+## 🎨 Layout
+O layout da aplicação mobile está disponível neste link: [Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med)
+
+
+
 
 ---
 ## 📝 Licença
