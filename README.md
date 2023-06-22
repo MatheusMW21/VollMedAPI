@@ -24,7 +24,9 @@ Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o
 - Paginação e Ordenação;
 - Boa práticas REST;
 - Tratamento de Erros;
-- Controle de acesso com JWT.
+- Controle de acesso com JWT;
+- Documentação da API;
+- Teste automatizados.
 
 
 ## 🎨 Layout
