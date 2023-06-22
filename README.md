@@ -10,7 +10,10 @@ Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o
 - Desenvolvimento de uma API Rest;
 - CRUD;
 - Validações;
-- Paginação e Ordenação.
+- Paginação e Ordenação;
+- Boa práticas REST;
+- Tratamento de Erros;
+- Controle de acesso com JWT.
 
 
 ## 🎨 Layout
