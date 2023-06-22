@@ -29,7 +29,7 @@ public class AppoimentSchedule {
 
         var paciente = pacientRepository.getReferenceById(data.pacientId());
         var medico = chooseDoctor(data);
-        var appoiment = new Appoiment(null, medico, paciente, data.data());
+        var appoiment = new Appoiment(null, medico, paciente, data.data(), null);
         appoimentRepository.save(appoiment);
     }
 
@@ -43,6 +43,14 @@ public class AppoimentSchedule {
         }
 
         return doctorRepository.chooseRandomDoctor(data.especialidade(), data.data());
+    }
 
+    public void cancel (CancelAppoimentData data){
+        if(!appoimentRepository.existsById(data.appoimentId())){
+            throw new ValidacaoException("Id da consulta inválido!");
+        }
+
+        var appoiment = appoimentRepository.getReferenceById(data.appoimentId());
+        appoiment.cancel(data.reason());
     }
 }

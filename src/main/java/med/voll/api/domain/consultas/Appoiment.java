@@ -32,8 +32,12 @@ public class Appoiment {
 
     private LocalDateTime data;
 
+    @Column(name = "motivo_cancelamento")
+    @Enumerated(EnumType.STRING)
+    private CancellationReason cancellationReason;
 
-
-
+    public void cancel(CancellationReason reason) {
+        this.cancellationReason = reason;
+    }
 
 }

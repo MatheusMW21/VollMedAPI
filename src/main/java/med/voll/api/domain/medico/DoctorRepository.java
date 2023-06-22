@@ -11,18 +11,19 @@ public interface DoctorRepository extends JpaRepository<Doctor, Long> {
     Page<Doctor> findAllByAtivoTrue (Pageable page);
 
     @Query("""
-            select m from Medico m 
-            where m.ativo = 1
-            and
-            m.especialidade = :especialidade
-            and
-            m.id not in(
-                select c.medico.id from Consulta c 
+                select m from Medico m
                 where
-                c.data = :data
-            )
-            order by rand()
-            limit 1
-            """)
+                m.ativo = 1
+                and
+                m.especialidade = :especialidade
+                and
+                m.id not in(
+                        select c.medico.id from Consulta c
+                        where
+                        c.data = :data
+                )
+                order by rand()
+                limit 1
+                """)
     Doctor chooseRandomDoctor(Especialidade especialidade, LocalDateTime data);
 }
