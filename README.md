@@ -5,6 +5,17 @@ Será um aplicativo com algumas opções, em que a pessoa que for usar pode faze
 
 Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o nosso será responsável pelo desenvolvimento da API Rest desse projeto.
 
+## 🛠 Tecnologias
+
+- Spring Boot 3;
+- Java 17;
+- Lombok;
+- MySQL;
+- Flyway;
+- JPA/Hibernate;
+- Maven;
+- Insomnia.
+
 ## ⚙️ Objetivos
 
 - Desenvolvimento de uma API Rest;
@@ -20,16 +31,7 @@ Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o
 O layout da aplicação mobile está disponível neste link: [Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med)
 
 
-## 🛠 Tecnologias
 
-- Spring Boot 3;
-- Java 17;
-- Lombok;
-- MySQL;
-- Flyway;
-- JPA/Hibernate;
-- Maven;
-- Insomnia.
 
 ---
 ## 📝 Licença
