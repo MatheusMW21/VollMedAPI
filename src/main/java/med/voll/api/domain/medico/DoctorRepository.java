@@ -32,7 +32,7 @@ public interface DoctorRepository extends JpaRepository<Doctor, Long> {
             select m.ativo
             from Doctor m 
             where 
-            m.id = :id
+            m.id = :idDoctor
             """)
     Boolean findAtivoById(Long idDoctor);
 }
