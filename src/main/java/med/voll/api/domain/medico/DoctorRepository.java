@@ -28,4 +28,11 @@ public interface DoctorRepository extends JpaRepository<Doctor, Long> {
                 limit 1
                 """)
     Doctor chooseRandomDoctor(Especialidade especialidade, LocalDateTime data);
+    @Query("""
+            select m.ativo
+            from Doctor m 
+            where 
+            m.id = :id
+            """)
+    Boolean findAtivoById(Long idDoctor);
 }

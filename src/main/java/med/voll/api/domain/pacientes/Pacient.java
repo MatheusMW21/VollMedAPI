@@ -2,15 +2,17 @@ package med.voll.api.domain.pacientes;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.voll.api.domain.endereco.Endereco;
 
 @Table(name = "pacientes")
-@Entity(name = "Paciente")
+@Entity(name = "Pacientes")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(of = "id")
 public class Pacient {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
