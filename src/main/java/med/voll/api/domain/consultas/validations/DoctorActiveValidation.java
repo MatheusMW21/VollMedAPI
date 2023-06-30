@@ -3,8 +3,12 @@ package med.voll.api.domain.consultas.validations;
 import med.voll.api.domain.ValidacaoException;
 import med.voll.api.domain.consultas.AppoimentData;
 import med.voll.api.domain.medico.DoctorRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-public class DoctorActiveValidation {
+@Component
+public class DoctorActiveValidation implements ValidationInterface{
+    @Autowired
     private DoctorRepository repository;
     public void validation(AppoimentData data) {
         if(data.doctorId() == null) {

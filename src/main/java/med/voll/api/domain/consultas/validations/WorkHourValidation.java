@@ -2,10 +2,12 @@ package med.voll.api.domain.consultas.validations;
 
 import med.voll.api.domain.ValidacaoException;
 import med.voll.api.domain.consultas.AppoimentData;
+import org.springframework.stereotype.Component;
 
 import java.time.DayOfWeek;
 
-public class WorkHourValidation {
+@Component
+public class WorkHourValidation implements ValidationInterface {
 
     public void validation(AppoimentData data) {
         var appoimentData = data.data();
