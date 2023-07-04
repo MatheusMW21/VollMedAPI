@@ -2,6 +2,7 @@ package med.voll.api.domain.consultas;
 
 import med.voll.api.domain.ValidacaoException;
 import med.voll.api.domain.consultas.validations.ValidationInterface;
+import med.voll.api.domain.consultas.validations.cancelValidation.CancelValidations;
 import med.voll.api.domain.medico.Doctor;
 import med.voll.api.domain.medico.DoctorRepository;
 import med.voll.api.domain.pacientes.PacientRepository;
@@ -23,6 +24,9 @@ public class AppoimentSchedule {
 
     @Autowired
     private List<ValidationInterface> validation;
+
+    @Autowired
+    private List<CancelValidations> cancelValidation;
 
     public void appoiment(AppoimentData data) {
         if(!pacientRepository.existsById(data.pacientId())){
@@ -57,6 +61,8 @@ public class AppoimentSchedule {
         if(!appoimentRepository.existsById(data.appoimentId())){
             throw new ValidacaoException("Id da consulta inválido!");
         }
+
+        cancelValidation.forEach(v -> v.validation(data));
 
         var appoiment = appoimentRepository.getReferenceById(data.appoimentId());
         appoiment.cancel(data.reason());

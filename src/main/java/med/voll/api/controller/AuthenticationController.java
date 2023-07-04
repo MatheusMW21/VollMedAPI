@@ -3,6 +3,7 @@ package med.voll.api.controller;
 import jakarta.validation.Valid;
 import med.voll.api.domain.user.AuthenticationData;
 import med.voll.api.domain.user.User;
+import med.voll.api.domain.user.UserRepository;
 import med.voll.api.infra.security.TokenData;
 import med.voll.api.infra.security.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 @RequestMapping("/login")
 public class AuthenticationController {
@@ -23,6 +25,9 @@ public class AuthenticationController {
 
     @Autowired
     private TokenService tokenService;
+
+    @Autowired
+    UserRepository repository;
 
     @PostMapping
     public ResponseEntity logIn(@RequestBody @Valid AuthenticationData data) {
