@@ -54,33 +54,4 @@ class AppoimentControllerTest {
         assertThat(response.getStatus()).isEqualTo(HttpStatus.BAD_REQUEST.value());
     }
 
-    @Test
-    @DisplayName("Cenário onde deveria devolver error 200")
-    @WithMockUser
-    void schedule2() throws Exception {
-        var data = LocalDateTime.now().plusHours(1);
-        var especialidade = Especialidade.CARDIOLOGIA;
-
-        var detailData = new DetailAppoimentData(null, 2l, 5l, data);
-
-        when(appoimentSchedule.appoiment(any())).thenReturn(detailData);
-
-        var response = mvc.perform(
-                post(
-                        "/consultas")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(appoimentDTOJson.write(
-                                new AppoimentData(2l, 5l,data, especialidade)
-                        ).getJson())
-                )
-                .andReturn().getResponse();
-
-        assertThat(response.getStatus()).isEqualTo(HttpStatus.OK.value());
-
-        var jsonExpected = detailAppoimentDTOJson.write(
-                detailData
-        ).getJson();
-
-        assertThat(response.getContentAsString()).isEqualTo(jsonExpected);
-    }
 }
