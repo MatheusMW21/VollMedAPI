@@ -4,7 +4,6 @@ import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import med.voll.api.domain.pacientes.*;
-import med.voll.api.domain.pacientes.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -22,7 +21,7 @@ public class PatientController  {
 
     @PostMapping
     @Transactional
-    public ResponseEntity register(@RequestBody @Valid PatientRegistrationData data, UriComponentsBuilder uriBuilder){
+    public ResponseEntity register(@RequestBody @Valid PacientRegistrationData data, UriComponentsBuilder uriBuilder){
         var pacient = new Pacient(data);
         repository.save(pacient);
 

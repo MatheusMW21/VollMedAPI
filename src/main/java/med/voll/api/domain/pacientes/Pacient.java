@@ -23,7 +23,7 @@ public class Pacient {
 
     private Boolean ativo;
 
-    public Pacient(PatientRegistrationData data){
+    public Pacient(PacientRegistrationData data){
         this.ativo = true;
         this.nome = data.nome();
         this.email = data.email();
