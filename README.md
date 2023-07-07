@@ -14,7 +14,9 @@ Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o
 - Flyway;
 - JPA/Hibernate;
 - Maven;
-- Insomnia.
+- Insomnia;
+- Swagger;
+- TDD.
 
 ## ⚙️ Objetivos
 
