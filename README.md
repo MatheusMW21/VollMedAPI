@@ -1,40 +1,36 @@
-## 💻 Sobre o projeto
-Trabalharemos em um projeto de uma clínica médica fictícia. Temos uma empresa chamada **Voll Med**, que possui uma clínica que precisa de um aplicativo para monitorar o cadastro de médicos, pacientes e agendamento de consultas.
+## 💻 **About the Project**
+We are working on a project for a fictional medical clinic named Voll Med. The clinic requires an application to manage the registration of doctors, patients, and appointment scheduling.
 
-Será um aplicativo com algumas opções, em que a pessoa que for usar pode fazer o CRUD, tanto de médicos quanto de pacientes e o agendamento e cancelamento das consultas.
+The application will provide various options, allowing users to perform CRUD operations for both doctors and patients, as well as schedule and cancel appointments.
 
-Enquanto um time de desenvolvimento será responsável pelo aplicativo mobile, o nosso será responsável pelo desenvolvimento da API Rest desse projeto.
+While a mobile development team will handle the application's front end, our team is responsible for developing the Rest API for this project.
 
-## 🛠 Tecnologias
+## 🛠 **Technologies**
+- Spring Boot 3
+- Java 17
+- Lombok
+- MySQL
+- Flyway
+- JPA/Hibernate
+- Maven
+- Insomnia
+- Swagger
+- TDD (Test-Driven Development)
 
-- Spring Boot 3;
-- Java 17;
-- Lombok;
-- MySQL;
-- Flyway;
-- JPA/Hibernate;
-- Maven;
-- Insomnia;
-- Swagger;
-- TDD.
+## ⚙️ **Objectives**
+- Development of a Rest API
+- CRUD operations
+- Validations
+- Pagination and Sorting
+- RESTful best practices
+- Error handling
+- Access control with JWT
+- API documentation
+- Automated testing
+- Project build
 
-## ⚙️ Objetivos
-
-- Desenvolvimento de uma API Rest;
-- CRUD;
-- Validações;
-- Paginação e Ordenação;
-- Boa práticas REST;
-- Tratamento de Erros;
-- Controle de acesso com JWT;
-- Documentação da API;
-- Teste automatizados;
-- Build do projeto.
-
-
-## 🎨 Layout
-O layout da aplicação mobile está disponível neste link: [Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med)
-
+## 🎨 **Layout**
+The layout for the mobile application is available [here on Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?type=design&node-id=2-1007&mode=design)
 
 
 
